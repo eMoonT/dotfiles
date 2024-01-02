@@ -16,6 +16,7 @@ picom_config=/home/emoon/.config/picom/picom.conf
 dunst_config_dir=/home/emoon/.config/dunst/dunstrc
 xinitrc_config=/home/emoon/.xinitrc
 xprofile_config=/home/emoon/.xprofile
+fzf_config_dir=/home/emoon/.fzf /home/emoon/.fzf.zsh /home/emoon/.fzf.bash
 scripts_dir=/home/emoon/scripts
 
 
@@ -44,6 +45,7 @@ cp "$picom_config" "$backup_dir"
 cp "$dunst_config_dir" "$backup_dir"
 cp "$xinitrc_config" "$backup_dir"
 cp "$xprofile_config" "$backup_dir"
+cp -r "$fzf_config_dir" "$backup_dir"
 cp -r "$scripts_dir" "$backup_dir"
 
 echo "Files copied to $backup_dir"
