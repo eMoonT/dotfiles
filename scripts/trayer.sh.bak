@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#killall-
+#if [ $? != 0 ];then
+#	trayer --edge top --tint 10 --align right --widthtype pixel --heighttype pixel --height 40
+#fi
+
+result=$(ps ax| grep -v grep | grep trayer)
+if [ "$result" == "" ]; then
+	# eval "trayer --edge top --transparent true --expand false --align right --width 40 --SetDockType false --tint 10"
+	trayer --edge top --tint 10 --align right --widthtype pixel --heighttype pixel --height 40
+#else
+#	killall trayer
+#fi
