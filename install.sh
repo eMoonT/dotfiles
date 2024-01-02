@@ -1,4 +1,4 @@
-#/bin/sh
+#bin/sh
 #
 # author: eMoon
 # date:   2024-01-02
@@ -21,6 +21,9 @@ scripts_dir=/home/emoon/scripts
 
 #base_package() {
 #  paru -S ly neovim nvui dunst ranger rofi tmux starship zsh alacritty picom-jonaburg-git tlp tlp-rwd tlpui feh amixer acpi acpitool xorg-xbacklight trayer
+#  mv ~/.config/nvim ~/.config/nvim.bak
+#  mv ~/.local/share/nvim ~/.local/share/nvim.bak
+#  git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 #}
 
 backup_dir="/home/emoon/dotfiles"
@@ -56,5 +59,5 @@ git remote add origin https://github.com/eMoonT/dotfiles.git
 git push origin main
 
 #[ echo $? -eq 0 ] && rm -rf $backup_dir
-rm -rf $alacritty_config $zshrc_config $starship_config $tmux_config_dir $dwm_config_dir $slock_config_dir $rofi_config $ranger_config $picom_config $xinitrc_config $xprofile_config $dunst_config_dir
+#rm -rf $backup_dir
 
