@@ -56,4 +56,5 @@ git remote add origin https://github.com/eMoonT/dotfiles.git
 git push origin main
 
 #[ echo $? -eq 0 ] && rm -rf $backup_dir
+rm -rf $alacritty_config $zshrc_config $starship_config $tmux_config_dir $dwm_config_dir $slock_config_dir $rofi_config $ranger_config $picom_config $xinitrc_config $xprofile_config $dunst_config_dir
 
