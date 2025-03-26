@@ -1,0 +1,121 @@
+# ~/.config/starship.toml
+
+# Use custom format
+format = """
+[$status$git_status](bold green)$directory$battery
+[emoon @ ➜](bold green) """
+
+right_format = """$all"""
+
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 10
+
+# Disable the blank line at the start of the prompt
+add_newline = true
+
+[git_status]
+conflicted = ""
+ahead = "💨"
+behind = " "
+diverged = " "
+up_to_date = "✓"
+untracked = ""
+stashed = " "
+#stashed = "📦"
+modified = " "
+staged = '[++\($count\)](green)'
+renamed = " "
+deleted = ""
+
+[status]
+style = "bg:blue"
+symbol = " "
+format = '[\[$symbol $common_meaning$signal_name$maybe_int\]]($style) '
+map_symbol = true
+disabled = false
+
+[battery]
+full_symbol = "  "
+charging_symbol = "⚡️ "
+discharging_symbol = "  "
+
+[[battery.display]] # "bold red" style and discharging_symbol when capacity is between 0% and 10%
+threshold = 10
+style = "bold red"
+
+[[battery.display]] # "bold yellow" style and 💦 symbol when capacity is between 10% and 30%
+threshold = 60
+style = "bold yellow"
+discharging_symbol = " "
+
+[[battery.display]] # "bold yellow" style and 💦 symbol when capacity is between 10% and 30%
+threshold = 90
+style = "bold green"
+discharging_symbol = " "
+
+[python]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[directory]
+read_only = " "
+home_symbol = ""
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[rust]
+symbol = " "

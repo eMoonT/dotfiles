@@ -157,7 +157,7 @@ export EDITOR='vim'
 # alias config
 alias ra='ranger'
 alias ne='neofetch | lolcat'
-alias x='extract'
+# alias x='extract'
 alias du='dust'
 
 alias egrep='egrep --color=auto'
@@ -178,6 +178,9 @@ alias setsck5='export ALL_PROXY=socks5://1.12.59.40:10230'
 alias unsetsck5='unset ALL_PROXY'
 
 alias ora_vnc="ssh -o ProxyCommand='ssh -W %h:%p -p 443 ocid1.instanceconsoleconnection.oc1.uk-london-1.anwgiljt275eacachwppcjfd4yzcifgrc63cqh4ze7rs47sx5hoyyhp4uima@instance-console.uk-london-1.oci.oraclecloud.com' -N -L localhost:5900:ocid1.instance.oc1.uk-london-1.anwgiljt275eacaccdjlzhmppomt4wuir7hnyh7n4rqqr3fdazrfwcuu5n7q:5900 ocid1.instance.oc1.uk-london-1.anwgiljt275eacaccdjlzhmppomt4wuir7hnyh7n4rqqr3fdazrfwcuu5n7q"
+alias sv='source /home/emoon/.venv/bin/activate'
+
+alias npm='pnpm'
 
 eval $(thefuck --alias)
 
@@ -200,3 +203,12 @@ export FNM_VERSION_FILE_STRATEGY="local"
 export FNM_LOGLEVEL="info"
 export FNM_RESOLVE_ENGINES="false"
 export FNM_COREPACK_ENABLED="false"
+
+# fcitx5
+#GTK_IM_MODULE=wayland
+#GTK_IM_MODULE=
+#
+# export ENABLE_SPECIAL_PROTOCOLS=true
+___GH_OVERRIDE_SHELL_FILE="${HOME}/.copilot.override.sh"; if [ -f "${___GH_OVERRIDE_SHELL_FILE}" ]; then . "${___GH_OVERRIDE_SHELL_FILE}"; fi
+
+[ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X" # boot up x-cmd.

@@ -6,11 +6,11 @@ export LANGUAGE=zh_CN:en_US
 [ -f ~/.xprofile ] && source ~/.xprofile
 
 # fcitx5 
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS=@im=fcitx
-export INPUT_METHOD=fcitx
-export SDL_IM_MODULE=fcitx
+#export GTK_IM_MODULE=fcitx
+#export QT_IM_MODULE=fcitx
+#export XMODIFIERS=@im=fcitx
+#export INPUT_METHOD=fcitx
+#export SDL_IM_MODULE=fcitx
 
 fcitx5 &
 
@@ -23,3 +23,6 @@ picom -b
 exec dwm
 
 export HISTTIMEFORMAT='%F %T '
+
+# dunst
+dunst &
